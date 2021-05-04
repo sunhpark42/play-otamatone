@@ -1,0 +1,22 @@
+#otamatone-chord-slider {
+  width: 50rem;
+  background-color: #e5e5e5;
+  box-sizing: border-box;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+}
+
+#chord-label {
+  width: 100%;
+  height: 100%;
+}
+
+#chord {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #e5e5e5;
+  opacity: 0;
+}
