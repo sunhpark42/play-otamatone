@@ -73,7 +73,7 @@ class Otamatone {
         <ol>
         <li>회색 부분을 누르면 소리가 나옵니다</li>
         <li>입 오른쪽 혹은 스페이스키를 누르면 입이 열립니다.</li>
-        (음량조절은 추후에 생길 예정입니다.)
+        <li>입이 열리면 소리가 커집니다</li>
         </ol>
       </div>
     `;
@@ -87,7 +87,13 @@ class Otamatone {
     document.querySelector('#chord').addEventListener('input', (event) => {
       const { value: index } = event.target;
       const audioId = audioIds[index];
+      const mouthIsOpened = document.querySelector('#otamatone-mouth').classList.contains('mouth-animate');
 
+      if (mouthIsOpened) {
+        document.querySelector(`#${'audio' + audioId}`).volume = 1;
+      } else {
+        document.querySelector(`#${'audio' + audioId}`).volume = 0.5;
+      }
       document.querySelector(`#${'audio' + audioId}`).play();
     });
 
