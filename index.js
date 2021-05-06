@@ -1,3 +1,5 @@
+import { ROOT } from './constants.js';
+
 const audioIds = [
   '1',
   '2',
@@ -44,7 +46,7 @@ class Otamatone {
           .map(
             (id) => `
               <audio id=${'audio' + id}>
-              <source src=${['/assets/', id, '.wav'].join('')} type="audio/wav">
+              <source src=${[ROOT, '/assets/', id, '.wav'].join('')} type="audio/wav">
               브라우저에서 음성을 재생할 수 없습니다.
               </audio>
             `
