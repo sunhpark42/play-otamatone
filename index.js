@@ -99,6 +99,22 @@ class Otamatone {
       document.querySelector('#otamatone-mouth').classList.remove('mouth-animate');
     });
 
+    document.querySelector('#mouth-button').addEventListener('touchstart', () => {
+      document.querySelector('#otamatone-mouth').classList.add('mouth-animate');
+    });
+
+    document.querySelector('#mouth-button').addEventListener('touchend', () => {
+      document.querySelector('#otamatone-mouth').classList.remove('mouth-animate');
+    });
+
+    document.querySelector('#mouth-button').addEventListener('touchcancel', () => {
+      document.querySelector('#otamatone-mouth').classList.remove('mouth-animate');
+    });
+
+    document.querySelector('#mouth-button').addEventListener('touchmove', () => {
+      document.querySelector('#otamatone-mouth').classList.remove('mouth-animate');
+    });
+
     document.addEventListener('keydown', (event) => {
       if (event.key === ' ') {
         document.querySelector('#otamatone-mouth').classList.add('mouth-animate');
