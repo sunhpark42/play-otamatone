@@ -5,6 +5,8 @@
 
 ## 페이지
 
+https://sunhpark42.github.io/play-otamatone/
+
 ## 사용법
 
 1. 회색 부분을 누르면 소리가 나옵니다
