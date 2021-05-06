@@ -111,10 +111,6 @@ class Otamatone {
       document.querySelector('#otamatone-mouth').classList.remove('mouth-animate');
     });
 
-    document.querySelector('#mouth-button').addEventListener('touchmove', () => {
-      document.querySelector('#otamatone-mouth').classList.remove('mouth-animate');
-    });
-
     document.addEventListener('keydown', (event) => {
       if (event.key === ' ') {
         document.querySelector('#otamatone-mouth').classList.add('mouth-animate');
